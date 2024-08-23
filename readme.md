@@ -4,14 +4,14 @@
 
 ## Grob-Planung
 
-Ich möchte Pong programmieren und möchte zunächst mit der Recherche beginnen, wie ich es umsetzen könnte.
+Ich möchte Pong programmieren und möchte zunächst als vorstufe ein Mansgoeggeli programmieren das sich nach vorne und zurück programmiert.
 
 ## 30.8.2024
 
 - [ ] Recherche, wie ich es Programmieren kann.
-- [ ] Versuchen Spieler 1 zu Programmieren, dass es mit den Tasten w und s, nach oben und unten bewegt.
-- [ ] Versuchen Spieler 2 zu Programmieren,, dass es mit den Tasten Pfeil nach oben und Pfeil nach unten, nach oben und unten bewegt.
-- [ ] Alle Fehler zu korrigieren und die Blöcke zu programmieren.(ihre Farbe, ihre Grösse)
+- [ ] Versuchen Mansgoeggeli zu programmieren, dass es sich nach vorne bewegt.
+- [ ] Versuchen das er sich auf einer Linie bewegt. Dass heisst den Code löschen bevor es den nächsten startet.
+- [ ] Genau das gleiche, wie bei Schritt 2 und 3, einfach nur, das sich das Mangoeggeli nach hinten bewegt.
 
 ✍️ 
 
