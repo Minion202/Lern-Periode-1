@@ -8,10 +8,6 @@ Ich möchte Pong programmieren und möchte zunächst mit der Recherche beginnen,
 
 ## 30.8.2024
 
-✍
-
-## 30.8.2024
-
 - [ ] Recherche, wie ich es Programmieren kann.
 - [ ] Versuchen Spieler 1 zu Programmieren, dass es mit den Tasten w und s, nach oben und unten bewegt.
 - [ ] Versuchen Spieler 2 zu Programmieren,, dass es mit den Tasten Pfeil nach oben und Pfeil nach unten, nach oben und unten bewegt.
