@@ -19,9 +19,9 @@ Neben der Bewegung der Figur von links nach rechts habe ich sie auch von oben na
 
 ## 06.09.2024
 
-- [ ] Player 1: fertig programmieren
-- [ ] Player 2: also mit pfeilen versuchen umzuprogrammieren
-- [ ] Design recherche von den beiden Playern
-- [ ] Design anfangen zu programmieren (wenn ich noch Zeit habe)
+- [ ] Code nochmal programmieren
+- [ ] Player 1 programmieren
+- [ ] Player 2 mit den Pfeilen programmieren
+- [ ] Design recherche
 
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
