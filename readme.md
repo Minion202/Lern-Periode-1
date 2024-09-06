@@ -17,11 +17,20 @@ Ich möchte Pong programmieren und möchte zunächst als vorstufe ein Mansgoegge
 Neben der Bewegung der Figur von links nach rechts habe ich sie auch von oben nach unten bewegt.
 
 
-## 06.09.2024
+ ## 06.09.2024
 
 - [ ] Code nochmal programmieren
-- [ ] Player 1 programmieren
-- [ ] Player 2 mit den Pfeilen programmieren
+- [x] Player 1 programmieren
+- [x] Player 2 mit den Pfeilen programmieren
 - [ ] Design recherche
 
+Ich habe heute Player 1 fertig programmiert und auch Player 2 hingekriegt. 
+Nur gibt es noch Fehler die ich korrigieren muss. Meine Players flackern, was ich auch noch korrigieren muss.
+
+## 13.09.2024
+
+- [ ] Schauen, was für Fehler ich gemacht habe und korrigieren
+- [ ] Das Flackern stoppen(was ich noch nicht weiss, wie genau)
+- [ ] Code den ich gmeacht habe noch mal programmieren damit ich es besser verstehe
+- [ ] Design von Player 1 und Player 2 researchen
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
