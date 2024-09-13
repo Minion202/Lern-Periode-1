@@ -29,8 +29,20 @@ Nur gibt es noch Fehler die ich korrigieren muss. Meine Players flackern, was ic
 
 ## 13.09.2024
 
-- [ ] Schauen, was für Fehler ich gemacht habe und korrigieren
-- [ ] Das Flackern stoppen(was ich noch nicht weiss, wie genau)
-- [ ] Code den ich gmeacht habe noch mal programmieren damit ich es besser verstehe
-- [ ] Design von Player 1 und Player 2 researchen
+- [x] Schauen, was für Fehler ich gemacht habe und korrigieren
+- [x] Das Flackern stoppen(was ich noch nicht weiss, wie genau)
+- [x] Code den ich gmeacht habe noch mal programmieren damit ich es besser verstehe
+- [x] Design von Player 1 und Player 2 researchen
+
+Ich bin heute sehr gut vorangekommen. Ich habe alle Ziele, die ich erreichen wollte, erreicht. 
+Außerdem konnte ich die Design-Recherche sogar schon anwenden.
+
+ ## 20.09.2024
+
+ - [ ] Mich darüber informieren, wie ich den Ball programmieren kann
+ - [ ] Nachdem research den Ball programmieren(weiss noch nicht wie)
+ - [ ] Schauen, das wenn der Ball die Wand berührt, das Spiel neu gestartet wird
+ - [ ] Punktezähler programmieren
+ - [ ] (wenn ich noch Zeit habe den Code nochmal schreiben)
+
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
