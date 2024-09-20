@@ -5,100 +5,108 @@ class Program
 {
     static void Main()
     {
-        // Initial position of the emoji
-        //Player 1
-        int positionX = 0;
-        int positionY = 0;
-        string emoji = "\u2503";
         
-        // Player 2
-        int P2X = 50;
-        int P2Y = 0;
-        string emoji1 = "\u2503"; // The emoji character to display
+        int positionX = 2; 
+        int positionY = 10;
+        string paddle = "\u2503";
         
-        // The emoji character to display
-        // Hide the cursor to prevent flickering
+        
+        int P2X = Console.WindowWidth - 3;
+        int P2Y = 10;
+        string paddle1 = "\u2503"; 
+        
+        
+        int paddleLength = 4; 
+
+        
+        int ballX = Console.WindowWidth / 2;
+        int ballY = Console.WindowHeight / 2;
+        int ballSpeedX = 1;
+        int ballSpeedY = 1;
+        string ball = "O";
+
+        
         Console.CursorVisible = false;
-        
+
         while (true)
         {
-            // Clear the console and draw the emoji at the current position
-            Console.Clear();
-            Console.SetCursorPosition(positionX, positionY); // Set the position on the console
-            Console.Write(emoji); // Draw the emoji
             
-            // Clear the console and draw the emoji at the current position
             Console.Clear();
-            Console.SetCursorPosition(P2X, P2Y); // Set the position on the console
-            Console.Write(emoji1); // Draw the emoji
-        
-            // Check if a key has been pressed
+
+            
+            for (int i = 0; i < paddleLength; i++)
+            {
+                Console.SetCursorPosition(positionX, positionY + i);
+                Console.Write(paddle);
+            }
+
+            
+            for (int i = 0; i < paddleLength; i++)
+            {
+                Console.SetCursorPosition(P2X, P2Y + i);
+                Console.Write(paddle1);
+            }
+
+            
+            Console.SetCursorPosition(ballX, ballY);
+            Console.Write(ball);
+
+            
+            ballX += ballSpeedX;
+            ballY += ballSpeedY;
+
+            
+            if (ballY <= 0 || ballY >= Console.WindowHeight - 1)
+            {
+                ballSpeedY = -ballSpeedY;
+            }
+
+            
+            if (ballX == positionX + 1 && ballY >= positionY && ballY < positionY + paddleLength)
+            {
+                ballSpeedX = -ballSpeedX;
+            }
+            else if (ballX == P2X - 1 && ballY >= P2Y && ballY < P2Y + paddleLength)
+            {
+                ballSpeedX = -ballSpeedX;
+            }
+
+            
+            if (ballX <= 0 || ballX >= Console.WindowWidth - 1)
+            {
+                ballX = Console.WindowWidth / 2;
+                ballY = Console.WindowHeight / 2;
+                ballSpeedX = -ballSpeedX;
+            }
+
+            
             if (Console.KeyAvailable)
             {
-                var key = Console.ReadKey(true); // Get the pressed key without displaying it
+                var key = Console.ReadKey(true);
 
-                // Move right if 'D' is pressed
-                if (key.Key == ConsoleKey.D)
+                
+                if (key.Key == ConsoleKey.W && positionY > 0)
                 {
-                    positionX++; // Move the emoji to the right
+                    positionY--; 
                 }
-                // Move left if 'A' is pressed
-                else if (key.Key == ConsoleKey.A)
+                else if (key.Key == ConsoleKey.S && positionY < Console.WindowHeight - paddleLength)
                 {
-                    if (positionX > 0) // Ensure the position doesn't go negative
-                    {
-                        positionX--; // Move the emoji to the left
-                    }
+                    positionY++; 
                 }
-                // Move up if 'W' is pressed
-                else if (key.Key == ConsoleKey.W)
+
+                
+                if (key.Key == ConsoleKey.UpArrow && P2Y > 0)
                 {
-                    if (positionY > 0) // Ensure the position doesn't go negative
-                    {
-                        positionY--; // Move the emoji up
-                    }
+                    P2Y--; 
                 }
-                // Move down if 'S' is pressed
-                else if (key.Key == ConsoleKey.S)
+                else if (key.Key == ConsoleKey.DownArrow && P2Y < Console.WindowHeight - paddleLength)
                 {
-                    if (positionY < Console.WindowHeight - 1) // Ensure the position doesn't exceed the console height
-                    {
-                        positionY++; // Move the emoji down
-                    }
-                }
-                // Move right if 'RightArrow' is pressed
-                if (key.Key == ConsoleKey.RightArrow)
-                {
-                    P2X++; // Move the emoji to the right
-                }
-                // Move left if 'LeftAarrow' is pressed
-                else if (key.Key == ConsoleKey.LeftArrow)
-                {
-                    if (P2X > 0) // Ensure the position doesn't go negative
-                    {
-                        P2X--; // Move the emoji to the left
-                    }
-                }
-                // Move up if 'UpArrow' is pressed
-                else if (key.Key == ConsoleKey.UpArrow)
-                {
-                    if (P2Y > 0) // Ensure the position doesn't go negative
-                    {
-                        P2Y--; // Move the emoji up
-                    }
-                }
-                // Move down if 'DownArrow' is pressed
-                else if (key.Key == ConsoleKey.DownArrow)
-                {
-                    if (P2Y < Console.WindowHeight - 1) // Ensure the position doesn't exceed the console height
-                    {
-                        P2Y++; // Move the emoji down
-                    }
+                    P2Y++; 
                 }
             }
 
-                    // Add a small delay to control the speed
-                    Thread.Sleep(20);
-                }
-            }
+            
+            Thread.Sleep(50);
         }
+    }
+}
