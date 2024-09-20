@@ -1,6 +1,13 @@
 # Lern-Periode 1
 23.08 bis 20.9.2024
 
+## Projekt Pong
+Mein Ziel ist es, ein cooles Pong-Spiel zu programmieren. Es wird ein Zwei-Spieler-Spiel,
+wo jeder ein Paddle steuert und der Ball in der Mitte rumfliegt. 
+Das Spiel soll richtig Spaß machen und die Spieler herausfordern, Punkte zu holen und den Ball vom eigenen Tor fernzuhalten.
+Am Ende hoffe ich, dass es so viel Spaß macht, dass wir stundenlang gegeneinander spielen können.
+<img width="748" alt="Screenshot 2024-09-20 at 11 16 39" src="https://github.com/user-attachments/assets/f825407e-46e1-4d36-b7f8-94683c3a1fb0">
+
 ## Grob-Planung
 
 Ich möchte Pong programmieren und möchte zunächst als vorstufe ein Mansgoeggeli programmieren das sich nach vorne und zurück programmiert.
@@ -48,5 +55,4 @@ Ich habe fast alle Ziele erreicht, die ich wollte. Ich habe jedoch keinen Punkte
 aber dafür funktioniert mein Code.
 
 ## Refelexion
-
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
+Am Anfang dachte ich echt, Programmieren wäre total schwer und dass ich endlos viele Zeilen Code schreiben müsste, um überhaupt irgendwas hinzukriegen. Es hat sich am Anfang so überwältigend angefühlt, und ich war echt unsicher, ob ich das jemals richtig hinkriegen würde. Aber je mehr ich dran geblieben bin und geübt habe, desto mehr habe ich gemerkt, dass es gar nicht so schlimm ist, wie ich dachte. Jetzt bin ich richtig stolz auf meinen Code und was ich damit geschafft habe. Es macht sogar Spaß, und ich habe richtig viel dazugelernt. Jetzt fühle ich mich sicher und will noch mehr Projekte machen.
