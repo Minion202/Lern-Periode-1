@@ -2,7 +2,7 @@
 23.08 bis 20.9.2024
 
 ## Projekt Pong
-Mein Ziel ist es, ein cooles Pong-Spiel zu programmieren. Es wird ein Zwei-Spieler-Spiel,
+Mein Ziel ist es, Pong zu programmieren. Es wird ein Zwei-Spieler-Spiel,
 wo jeder ein Paddle steuert und der Ball in der Mitte rumfliegt. 
 Das Spiel soll richtig Spaß machen und die Spieler herausfordern, Punkte zu holen und den Ball vom eigenen Tor fernzuhalten.
 Am Ende hoffe ich, dass es so viel Spaß macht, dass man stundenlang gegeneinander spielen können.
