@@ -1,5 +1,4 @@
 # Lern-Periode 1
-
 23.08 bis 20.9.2024
 
 ## Grob-Planung
@@ -39,10 +38,15 @@ Außerdem konnte ich die Design-Recherche sogar schon anwenden.
 
  ## 20.09.2024
 
- - [ ] Mich darüber informieren, wie ich den Ball programmieren kann
- - [ ] Nachdem research den Ball programmieren(weiss noch nicht wie)
- - [ ] Schauen, das wenn der Ball die Wand berührt, das Spiel neu gestartet wird
+ - [x] Mich darüber informieren, wie ich den Ball programmieren kann
+ - [x] Nachdem research den Ball programmieren(weiss noch nicht wie)
+ - [x] Schauen, das wenn der Ball die Wand berührt, das Spiel neu gestartet wird
  - [ ] Punktezähler programmieren
- - [ ] (wenn ich noch Zeit habe den Code nochmal schreiben)
+ - [x] (wenn ich noch Zeit habe den Code nochmal schreiben)
+
+Ich habe fast alle Ziele erreicht, die ich wollte. Ich habe jedoch keinen Punktezähler,
+aber dafür funktioniert mein Code.
+
+## Refelexion
 
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
