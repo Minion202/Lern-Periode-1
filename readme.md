@@ -5,7 +5,7 @@
 Mein Ziel ist es, ein cooles Pong-Spiel zu programmieren. Es wird ein Zwei-Spieler-Spiel,
 wo jeder ein Paddle steuert und der Ball in der Mitte rumfliegt. 
 Das Spiel soll richtig Spaß machen und die Spieler herausfordern, Punkte zu holen und den Ball vom eigenen Tor fernzuhalten.
-Am Ende hoffe ich, dass es so viel Spaß macht, dass wir stundenlang gegeneinander spielen können.
+Am Ende hoffe ich, dass es so viel Spaß macht, dass man stundenlang gegeneinander spielen können.
 <img width="748" alt="Screenshot 2024-09-20 at 11 16 39" src="https://github.com/user-attachments/assets/f825407e-46e1-4d36-b7f8-94683c3a1fb0">
 
 ## Grob-Planung
