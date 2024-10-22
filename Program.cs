@@ -5,68 +5,46 @@ class Program
 {
     static void Main()
     {
+        int player1X = 2;
+        int player1Y = 10;
+        string paddleSymbol = "\u2503";
         
-        int positionX = 2; 
-        int positionY = 10;
-        string paddle = "\u2503";
+        int player2X = Console.WindowWidth - 3;
+        int player2Y = 10;
         
-        
-        int P2X = Console.WindowWidth - 3;
-        int P2Y = 10;
-        string paddle1 = "\u2503"; 
-        
-        
-        int paddleLength = 4; 
+        int paddleLength = 4;
 
-        
         int ballX = Console.WindowWidth / 2;
         int ballY = Console.WindowHeight / 2;
         int ballSpeedX = 1;
         int ballSpeedY = 1;
-        string ball = "O";
+        string ballSymbol = "O";
 
-        
         Console.CursorVisible = false;
 
         while (true)
         {
-            
             Console.Clear();
-
             
-            for (int i = 0; i < paddleLength; i++)
-            {
-                Console.SetCursorPosition(positionX, positionY + i);
-                Console.Write(paddle);
-            }
-
-            
-            for (int i = 0; i < paddleLength; i++)
-            {
-                Console.SetCursorPosition(P2X, P2Y + i);
-                Console.Write(paddle1);
-            }
-
+            PaintPaddle(player1X, player1Y, paddleLength, paddleSymbol);
+            PaintPaddle(player2X, player2Y, paddleLength, paddleSymbol);
             
             Console.SetCursorPosition(ballX, ballY);
-            Console.Write(ball);
-
+            Console.Write(ballSymbol);
             
             ballX += ballSpeedX;
             ballY += ballSpeedY;
-
             
             if (ballY <= 0 || ballY >= Console.WindowHeight - 1)
             {
                 ballSpeedY = -ballSpeedY;
             }
-
             
-            if (ballX == positionX + 1 && ballY >= positionY && ballY < positionY + paddleLength)
+            if (ballX == player1X + 1 && ballY >= player1Y && ballY < player1Y + paddleLength)
             {
                 ballSpeedX = -ballSpeedX;
             }
-            else if (ballX == P2X - 1 && ballY >= P2Y && ballY < P2Y + paddleLength)
+            else if (ballX == player2X - 1 && ballY >= player2Y && ballY < player2Y + paddleLength)
             {
                 ballSpeedX = -ballSpeedX;
             }
@@ -83,30 +61,37 @@ class Program
             if (Console.KeyAvailable)
             {
                 var key = Console.ReadKey(true);
-
                 
-                if (key.Key == ConsoleKey.W && positionY > 0)
+                if (key.Key == ConsoleKey.W && player1Y > 0)
                 {
-                    positionY--; 
+                    player1Y--;
                 }
-                else if (key.Key == ConsoleKey.S && positionY < Console.WindowHeight - paddleLength)
+                else if (key.Key == ConsoleKey.S && player1Y < Console.WindowHeight - paddleLength)
                 {
-                    positionY++; 
+                    player1Y++;
                 }
 
-                
-                if (key.Key == ConsoleKey.UpArrow && P2Y > 0)
+                // Spieler 2 steuern
+                if (key.Key == ConsoleKey.UpArrow && player2Y > 0)
                 {
-                    P2Y--; 
+                    player2Y--;
                 }
-                else if (key.Key == ConsoleKey.DownArrow && P2Y < Console.WindowHeight - paddleLength)
+                else if (key.Key == ConsoleKey.DownArrow && player2Y < Console.WindowHeight - paddleLength)
                 {
-                    P2Y++; 
+                    player2Y++;
                 }
             }
-
             
-            Thread.Sleep(50);
+            Thread.Sleep(75);
+        }
+    }
+    static void PaintPaddle(int x, int y, int length, string symbol)
+    {
+        for (int i = 0; i < length; i++)
+        {
+            Console.SetCursorPosition(x, y + i);
+            Console.Write(symbol);
         }
     }
 }
+
